@@ -1,0 +1,7 @@
+#ignore sqlite db files
+*.db
+
+#ignore node modules
+node_modules
+
+*.log
