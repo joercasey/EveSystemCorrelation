@@ -41,6 +41,11 @@ module.exports.run = function (db, cb) {
       console.log("kills/jump: " + printStar(row));
     });
 
+  db.each("SELECT solarSystemName, security, jumps, shipkills, podkills, npckills, (shipkills+podkills) as total FROM SolarStats WHERE security < 0.05 ORDER BY total DESC LIMIT 10",
+    function(dberr, row) {
+      console.log("Deadly null: " + printStar(row));
+    });
+
   cb(null, 'queries');
 }
 

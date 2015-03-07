@@ -1,9 +1,9 @@
 
 
 module.exports.run = {
-    StaticImport: false,
-    OnlineImport: false,
-    KillImport: false,
-    JumpImport: false,
+    StaticImport: true,
+    OnlineImport: true,
+    KillImport: true,
+    JumpImport: true,
     Queries: true
 };
