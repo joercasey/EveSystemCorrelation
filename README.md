@@ -31,8 +31,9 @@ kills/jump: 08S-39 (-0.85) [kills=1+0] [npc=274] [jumps=1]
 ## Installation
 1. Install node.js
 2. Download the static data from https://developers.eveonline.com/resource/static-data-export
-3. Run `npm install` in EveSystemCorrelation directory
-4. Run application with `node index.js`
+3. Place `universeDataDx.db` into the `data` directory
+4. Run `npm install` in EveSystemCorrelation directory
+5. Run application with `node index.js`
 
 ## Configuration
 Config.js provides toggles for the various import steps.
